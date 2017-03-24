@@ -1,0 +1,135 @@
+<framework>
+	<testsuite name="systemTests">
+		<testcase number = "1"
+				  description = "Resolutions Test" 
+				  string = ""
+				  expectedresult = "P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "Test_320x200.mp4,Test_320x240.mp4,Test_384x288.mp4,Test_480x320.mp4,Test_640x480.mp4,Test_768x432.mp4,Test_768x576.mp4,Test_800x480.mp4,Test_800x600.mp4,Test_854x480.mp4,Test_960x540.mp4,Test_1024x576.mp4,Test_1024x768.mp4,Test_1152x768.mp4,Test_1152x864.mp4,Test_1280x720.mp4,Test_1280x768.mp4,Test_1280x800.mp4,Test_1280x854.mp4,Test_1280x960.mp4,Test_1280x1024.mp4,Test_1366x768.mp4,Test_1440x900.mp4,Test_1440x960.mp4,Test_1440x1050.mp4,Test_1440x1080.mp4,Test_1600x900.mp4,Test_1600x1200.mp4,Test_1680x1050.mp4,Test_1920x1080.mp4,Test_1920x1200.mp4,Test_2048x1080.mp4,Test_2048x1536.mp4,Test_2560x1440.mp4,Test_2560x1600.mp4,Test_2560x2048.mp4,Test_3440x1440.mp4,Test_3840x2160.mp4,Test_4096x2160.mp4,Test_4096x2304.mp4"
+				  output = "TC_1."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase> 
+		<testcase number = "2"
+				  description = "FrameRate Test" 
+				  string = ""
+				  expectedresult = "P,P,P,P,P,P,P,P,P,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "Test_768x432_15fps.mp4,Test_768x432_23.976fps.mp4,Test_768x432_24fps.mp4,Test_768x432_25fps.mp4,Test_768x432_29.97fps.mp4,Test_768x432_30fps.mp4,Test_768x432_50fps.mp4,Test_768x432_59.94fps.mp4,Test_768x432_60fps.mp4,Test_768x432_120fps.mp4"
+				  output = "TC_2."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "3"
+				  description = "BitDepth Test" 
+				  string = ""
+				  expectedresult = "P,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "Test_8bit.mp4,Test_10bit.mp4"
+				  output = "TC_3."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "4"
+				  description = "Format Test" 
+				  string = ""
+				  expectedresult = "P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "Test_704x576.3g2,Test_704x576.3gp,Test_768x432.asf,Test_768x432.avi,Test_768x432.drc,Test_768x432.f4v,Test_768x432.flv,Test_768x432.gif,Test_768x432.m2v,Test_768x432.m4v,Test_768x432.mov,Test_768x432.mp4,Test_768x432.mpeg,Test_768x432.mpg,Test_768x432.mxf,Test_768x432.ogg,Test_768x432.ogv,Test_768x432.rm,Test_768x432.vob,Test_768x432.webm,Test_768x432.wmv,Test_768x432.f4v0,Test_768x432.mkv,Test_768x432.mp4,Test_768x432.mxf,Test_768x432.rm,Test_768x432.wmv,Test_768x432.mpg,Test_768x432.avi,Test_768x432.vob,Test_768x432.f4v"
+				  output = "TC_4."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "5"
+				  description = "Pixel_Format Test" 
+				  string = ""
+				  expectedresult = "P,P,P,P,P,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "Test_768x432_yuv420p.mpg,Test_768x432_yuv420p10le.mp4,Test_768x432_yuv422p.mpg,Test_768x432_yuv422p10le.mp4,Test_768x432_yuv444p.mpg,Test_768x432_yuv444p10le.mp4"
+				  output = "TC_5."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "6"
+				  description = "Encoders Test" 
+				  string = "H261,H263,DV,ASV1,ASV2,FFV1,FLASHSV,FLASHSV2,FLV,H263P,MPEG1,MPEG4,MSMPEG4,MSVIDEO1,QTRLE,SVQ1,UT,WMV1,WMV2,ZMBV,DIRAC,JP2K,X264,X265,MPEG2,PRORES,SNOW,THEORA,VP8,VP9XAVS,XVID"
+				  expectedresult = "P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "Test_352x288_29.97fps_h261.mov,Test_704x576_29.97fps_h263.mov,Test_720x480_29.97fps_dv.dv,Test_768x432_29.97fps_asv1.mov,Test_768x432_29.97fps_asv2.mov,Test_768x432_29.97fps_ffv1.avi,Test_768x432_29.97fps_flashsv.avi,Test_768x432_29.97fps_flashsv2.flv,Test_768x432_29.97fps_flv.flv,Test_768x432_29.97fps_h263p.mov,Test_768x432_29.97fps_mpeg1.mpg,Test_768x432_29.97fps_mpeg4.mp4,Test_768x432_29.97fps_msmpeg4.mov,Test_768x432_29.97fps_msvideo1.avi,Test_768x432_29.97fps_qtrle.mov,Test_768x432_29.97fps_svq1.avi,Test_768x432_29.97fps_ut.mov,Test_768x432_29.97fps_wmv1.mov,Test_768x432_29.97fps_wmv2.mov,Test_768x432_29.97fps_zmbv.mov,Test_768x432_30fps_dirac.mkv,Test_768x432_30fps_jp2k.mov,Test_768x432_30fps_libx264.mp4,Test_768x432_30fps_libx265.mp4,Test_768x432_30fps_mpeg2.mov,Test_768x432_30fps_prores.mov,Test_768x432_30fps_snow.mov,Test_768x432_30fps_theora.avi,Test_768x432_30fps_vp8.webm,Test_768x432_30fps_vp9.webm,Test_768x432_30fps_xavs.avi,Test_768x432_30fps_xvid.mov"
+				  output = "TC_6."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "7"
+				description = "Durations Test" 
+				  string = "10min,30min,93min"
+				  expectedresult = "P,P,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "Test_10min.mp4,Test_30min.mp4,Test_93min.mp4"
+				  output = "TC_7."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "8"
+				  description = "ScanTypes Test" 
+				  string = ""
+				  expectedresult = "P,P,P,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "Test1_1920x1080_420i_29.97fps.mp4,Test1_1920x1080_420i_29.97fps.mp4,Test1_1920x1080_420p_29.97fps.mp4,Test1_1920x1080_420p_59.94fps.mp4"
+				  output = "TC_8."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "9"
+				  description = "QA-Features Test" 
+				  string = "PID support,Frame2Process,MeasurementPeriod,ROI,StartPoint,QualityThreshold,ReportFile,Speed,Remark"
+				  expectedresult = "P,P,P,F,F,F,F,F,P,P,F,F,P,F,F,F,F,F,P,P,F,F,F,P,F,F,F,F,P,F,F,F,P,P,P,P,F,F,F,F,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "Test_MultiStream.ts,Test_MultiStream.ts,Test_frame40992.mp4,Test_frame40992.mp4,Test_frame40992.mp4,Test_frame40992.mp4,Test_frame40992.mp4,Test_frame40992.mp4,Test_frame40992.mp4,Test_frame40992.mp4,Test_frame40992.mp4,Test_frame40992.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_frame134212.mp4,Test_frame134212.mp4,Test_frame134212.mp4,Test_frame134212.mp4,Test_frame134212.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4"
+				  output = "TC_9."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "10"
+				  description = "" 
+				  string = ""
+				  expectedresult = ""
+				  subfolder =""
+				  
+                  command = ""
+				  inputVideos =  ""
+				  output = ""
+				  conditions = "">
+		</testcase>
+		<testcase number = "11"
+				  description = "Usage Test" 
+				  string = "unsupported option/typos,RepeatedOptions,OptionOrder"
+				  expectedresult = "F,F,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P"
+				  subfolder =""
+				  command = "-xyz,-i Test_324x240.mp4,-roi 10:10:300:200 -sp 10 -f2p 50 -mper 2 -speed 1 -rem abc -qthresh 90,-sp 10 -roi 10:10:300:200 -f2p 50 -mper 2 -speed 1 -rem abc -qthresh 90,-sp 10 -f2p 50 -roi 10:10:300:200 -mper 2 -speed 1 -rem abc -qthresh 90,-sp 10 -f2p 50 -mper 2 -roi 10:10:300:200 -speed 1 -rem abc -qthresh 90,-sp 10 -f2p 50 -mper 2 -speed 1 -roi 10:10:300:200 -rem abc -qthresh 90,-sp 10 -f2p 50 -mper 2 -speed 1 -rem abc -roi 10:10:300:200 -qthresh 90,-sp 10 -f2p 50 -mper 2 -speed 1 -rem abc -qthresh 90 -roi 10:10:300:200,-f2p 50 -roi 10:10:300:200 -sp 10 -mper 2 -speed 1 -rem abc -qthresh 90,-f2p 50 -mper 2 -roi 10:10:300:200 -sp 10 -speed 1 -rem abc -qthresh 90,-f2p 50 -mper 2 -speed 1 -roi 10:10:300:200 -sp 10 -rem abc -qthresh 90,-f2p 50 -mper 2 -speed 1 -rem abc -roi 10:10:300:200 -sp 10 -qthresh 90,-f2p 50 -mper 2 -speed 1 -rem abc -qthresh 90 -roi 10:10:300:200 -sp 10,-mper 2 -roi 10:10:300:200 -sp 10 -f2p 50 -speed 1 -rem abc -qthresh 90,-mper 2 -speed 1 -roi 10:10:300:200 -sp 10 -f2p 50 -rem abc -qthresh 90,-mper 2 -speed 1 -rem abc -roi 10:10:300:200 -sp 10 -f2p 50 -qthresh 90,-mper 2 -speed 1 -rem abc -qthresh 90 -roi 10:10:300:200 -sp 10 -f2p 50,-speed 1 -roi 10:10:300:200 -sp 10 -f2p 50 -mper 2 -rem abc -qthresh 90,-speed 1 -rem abc -roi 10:10:300:200 -sp 10 -f2p 50 -mper 2 -qthresh 90,-speed 1 -rem abc -qthresh 90 -roi 10:10:300:200 -sp 10 -f2p 50 -mper 2,-rem abc -roi 10:10:300:200 -sp 10 -f2p 50 -mper 2 -speed 1 -qthresh 90,-rem abc -qthresh 90 -roi 10:10:300:200 -sp 10 -f2p 50 -mper 2 -speed 1,-qthresh 90 -roi 10:10:300:200 -sp 10 -f2p 50 -mper 2 -speed 1 -rem abc"
+				  inputVideos =  "Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,"
+				  output = "TC_11."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "12"
+				  description = "BugFix Test" 
+				  string = "Comcast,BellMedia,ViaSat,Rogers,Elemental,Discovery,B_Sky_B,DirecTV,Telefonica"
+				  expectedresult = "P,P,P,P,P,F,P,P,P,P,P,P,P,P,P,P,F,F,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P"
+				  subfolder =""
+				  command = " "
+				  inputVideos =  "DWTS1_1080i_60.ts,JB1RTA_1080i_60.ts,Blacklist_indMezz_3mincut.mov,2minSourcetest.mpg,Tangerine_Global_Promo.ts,htcs_prores_5sec_elemental.mov,AT3790_DWTS1_C1_LVLH05.ts,AT3790_DWTS1_C1_LVLH07.ts,AT3790_JB1RTA_C1_LVLH06.ts,AT3790_JB1RTA_C1_LVLH07.ts,Blacklist_indMezz_3mincut_LVLH07.ts,2minSourcetest_1280X720p60.ts,Tangerine_Global_Promo_VS7000_LVLH07A.ts,htcs_prores_5sec_elemental_1280X720.ts,4k_2minXAVC 60P.MXF,4k_2minXAVC 60P-Adaptive_01.mp4,4k_2minXAVC 60P-Adaptive_02.mp4,4k_2minXAVC 60P-Adaptive_02.mp4,4k_2minXAVC 60P-Adaptive_02.mp4,4k_2minXAVC 60P-Adaptive_02.mp44k_2minXAVC 60P-Adaptive_03.mp4,4k_2minXAVC 60P-Adaptive_04.mp4,4k_2minXAVC 60P-Adaptive_05.mp4,4k_2minXAVC 60P-Adaptive_06.mp4,4k_2minXAVC 60P-Adaptive_07.mp4,4k_2minXAVC 60P-Adaptive_08.mp4,4k_2minXAVC 60P-Adaptive_09.mp4,4k_2minXAVC 60P-Adaptive_10.mp4,bball_reference.mp4,bball_350k.mp4,SNO_Ref.ts,SNO_AVP.ts,TSN_Ref.ts,SNO_DCM.ts,TSN_AVP.ts,TSN_DCM.ts,Shopping.ts,Shopping_720p.mp4,Shopping_1080p.mp4,Ref.mxf,Test.mp4,Ref_football_yuv420.avi,Test_football_yuv420.mp4,Ref_Elecard_RuBeatles_4K_short_HEVC_20mbps.ts,Test_Elecard_RuBeatles_4K_short_HEVC_20mbps.ts,Ref.mpg,Test.mp4,MEZZ_SEMSADA_2min_30Mbps_1080i30.ts,MEZZ_SEMSADA_2min_30Mbps_1080i30_250.mp4,MEZZ_SEMSADA_2min_30Mbps_1080i30_600.mp4"
+				  output = "TC_12."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+		<testcase number = "13"
+				  description = "Spainish Test" 
+				  string = "SpanishInputs"
+				  expectedresult = "P,P,P,P"
+				  subfolder =""
+				  command = "-mper 2.5,-mper 2,5,-qthresh 80.5,-qthresh 80,5"
+				  inputVideos =  "Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4,Test_320x240.mp4"
+				  output = "TC_13."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
+	</testsuite>
+</framework>
