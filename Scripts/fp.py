@@ -26,7 +26,7 @@ class globalTCPaths(object):
 
     testDataDir = os.path.join(testRoot, "TestData")
     if ((sys.platform == 'win32') or (sys.platform == 'win64')):
-	    testDataDir = os.path.join("C:\\Users\\liuxu\\Documents\\OneDrive\\SingleSourceTesting\\TestData")
+	    testDataDir = os.path.join("..\\TestData")
             
     goldFileFolder = os.path.join(testRoot, "ReferenceResults")
     

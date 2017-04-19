@@ -27,28 +27,28 @@ def combo():
     lst = []
     subset = []
     for i in range(0, len(roi)):         
-        str1 = "-roi" + " " + roi[i]
+        str1 = "-roi" + " " + roi[i] + " "
         lst.append(str1)
         for j in range(0, len(sp)):
                             
-                str2 = "-sp" +" " + sp[j]
+                str2 = "-sp" +" " + sp[j]+ " "
                 lst.append(str2)    
                 for k in range(0, len(f2p)):
                      
-                    str3 = "-f2p"+" " + f2p[k]
+                    str3 = "-f2p"+" " + f2p[k]+ " "
                     lst.append(str3)
                     for h in range(0, len(speed)):
                                                        
-                            str4 = "-speed"+" "+ speed[h]
+                            str4 = "-speed"+" "+ speed[h]+ " "
                             lst.append(str4)
                             for u in range(0, len(mper)):                                  
                                                                                   
-                                str5 = "-mper" +" "+ mper[u]
+                                str5 = "-mper" +" "+ mper[u]+ " "
                                 lst.append(str5)
                                 for l in range(0, len(qthresh)):
                                    # if len(lst) > 0:
                                     #    lst = lst[:-1]                                                                                        
-                                    str6 = "-qthresh"+" "+ qthresh[l]
+                                    str6 = "-qthresh"+" "+ qthresh[l]+ " "
                                     lst.append(str6)
                                     #print(lst)
                                     subset.append(lst)  
@@ -59,7 +59,4 @@ def combo():
                 lst = lst[:-1]
         lst = lst[:-1]        
     
-    for i in range(0, len(subset)):                           
-        print(itertools.permutations(subset[i], 6))  
-combo()
-    
+    return subset

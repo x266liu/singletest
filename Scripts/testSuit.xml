@@ -131,5 +131,15 @@
 				  output = "TC_13."
 				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
 		</testcase>
+		<testcase number = "15"
+				  description = "combo Test" 
+				  string = "ComboInputs"
+				  expectedresult = "P"
+				  subfolder =""
+				  command = ""
+				  inputVideos =  "T.mp4"
+				  output = "TC_15."
+				  conditions = "The string &quot;task is finished&quot; is found in the log file;Report CSV DOESN'T matche the gold file;Performance values are within expected range;Warning;Error">
+		</testcase>
 	</testsuite>
 </framework>

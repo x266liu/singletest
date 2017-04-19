@@ -1,16 +1,15 @@
 Test Case Number,Expected(Pass or Fail), Result, Equal, Description,Command, Conditions Checked
 
 ,,Test and verify different resolution videos:
-1.1,P,PASS,Pass,mp4,..\Bin\SQMLib\Windows\SSQM.exe -i C:\Users\liuxu\Documents\OneDrive\SingleSourceTesting\TestData\1-Resolutions\Test_320x200.mp4 -lt file -lf ..\Logs\2017-03-24 09h30m08s\TC_1.1_Test_320x200.mp4.log -rf ..\Logs\2017-03-24 09h30m08s\TC_1.1_Test_320x200.mp4_Report.csv -f2p 10,   The string "task is finished" is found in the log file as expected.    Report CSV DOESN'T matche the gold file as expected.    Performance values are within expected range as expected.    Warning as expected.    Error as expected.  
-1.2,P,PASS,Pass,mp4,..\Bin\SQMLib\Windows\SSQM.exe -i C:\Users\liuxu\Documents\OneDrive\SingleSourceTesting\TestData\1-Resolutions\Test_320x240.mp4 -lt file -lf ..\Logs\2017-03-24 09h30m08s\TC_1.2_Test_320x240.mp4.log -rf ..\Logs\2017-03-24 09h30m08s\TC_1.2_Test_320x240.mp4_Report.csv -f2p 10,   The string "task is finished" is found in the log file as expected.    Report CSV DOESN'T matche the gold file as expected.    Performance values are within expected range as expected.    Warning as expected.    Error as expected.  
+15,FAIL,combo Test,Unknown exception(<class 'KeyboardInterrupt'>, KeyboardInterrupt(), <traceback object at 0x02FD8760>)
 
 Test Run Settings
-Starting TC Number: 1.1
-Ending TC Number: 1.2
-Frames to process setting: 10
+Starting TC Number: 15.1
+Ending TC Number: 15.1
+Frames to process setting: 1000000
 
 Test Summary Report
 
-Total Number of Test Cases: 2
-Total Number of Pass Test Cases: 2
-Total Number of Fail Test Cases: 0
+Total Number of Test Cases: 1
+Total Number of Pass Test Cases: 0
+Total Number of Fail Test Cases: 1

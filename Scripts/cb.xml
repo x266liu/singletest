@@ -2,10 +2,10 @@
 	<testsuite name="combination">
 		<testcase
 		flag = "-roi, -sp, -f2p, -speed, -mper, -qthresh"
-		roi = "10:10:200:200, 5:5:200:200, 10:10:201:201, 5:5:201:201"
+		roi = "10:10:200:200,  5:5:201:201"
 		sp = "10, 11"
 		f2p = "200, 201"
-		speed = "0,1,2,3"
+		speed = "0,3"
 		mper = "1, 2"
 		qthresh = "80, 81"
 		>
